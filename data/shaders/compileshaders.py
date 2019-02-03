@@ -12,7 +12,7 @@ if not os.path.exists(sys.argv[1]):
 path = sys.argv[1]
 
 shaderfiles = []
-for exts in ('*.vert', '*.frag', '*.comp', '*.geom', '*.tesc', '*.tese'):
+for exts in ('*.vert', '*.frag', '*.comp', '*.geom', '*.tesc', '*.tese', '*.glsl', '*.hlsl'):
 	shaderfiles.extend(glob.glob(os.path.join(path, exts)))
 
 failedshaders = []
