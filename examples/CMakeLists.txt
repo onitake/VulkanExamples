@@ -107,6 +107,7 @@ set(EXAMPLES
 	texturecubemap
 	texturemipmapgen
 	texturesparseresidency
+	tressfx
 	triangle
 	viewportarray
 	vulkanscene
