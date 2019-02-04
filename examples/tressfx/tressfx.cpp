@@ -55,7 +55,7 @@ class VulkanExample : public VulkanExampleBase, public VulkanInterface {
 	EI_LayoutManager *shaderman;
 
 	void loadHairData() {
-		loadBones(skeleton);
+		skeleton.loadSuSkeleton(getTressFXData("skeleton.txt"));;
 
 		AMD::TressFXAsset* asset = new AMD::TressFXAsset();
 

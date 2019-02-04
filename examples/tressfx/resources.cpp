@@ -91,5 +91,5 @@ void loadBones(BoneMapping &mapper) {
 		"frenchHornMonster_R_ULeg_JNT",
 	};
 
-	std::for_each(bones.begin(), bones.end(), [&mapper](const std::string &name) { mapper.addbone(name); });
+	std::for_each(bones.begin(), bones.end(), [&mapper](const std::string &name) { mapper.addBone(name); });
 }
