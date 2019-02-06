@@ -18,7 +18,7 @@ std::string getTressFXData(const std::string& name) {
 }
 
 std::string getTressFXTexture(const std::string &name) {
-	const std::string path = "data/textures/";
+	const std::string path = "data/textures/tressfx/";
 	return path + name;
 }
 
@@ -62,7 +62,7 @@ void applyLayouts(EI_Device *pDevice, EI_LayoutManager* shaderman) {
 }
 
 void loadBones(BoneMapping &mapper) {
-	// TODO find the mesh file where these are defined
+	return; // this is now loaded from skeleton.txt
 	std::vector<std::string> bones = {
 		"frenchHornMonster_root_JNT",
 		"frenchHornMonster_pelvis_JNT",

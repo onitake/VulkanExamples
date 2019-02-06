@@ -81,7 +81,7 @@ class VulkanExample : public VulkanExampleBase, public VulkanInterface {
 		// spawn from. the color sampled at the spawn point is used as the hair's base color.
 		// note that this is used as a vertex shader input!
 		// TODO convert data/textures/Ratboy_Body_MAT.tColor.tex to ktx to make this work
-		std::string hairtexname = getTressFXTexture("Ratboy_Body_MAT.tColor.ktx");
+		std::string hairtexname = getTressFXTexture("Ratboy_Body_MAT.tColor.dds");
 		gli::texture hairtex = gli::load(hairtexname);
 		if (hairtex.empty()) {
 			vks::tools::exitFatal("can't load texture", 1);
