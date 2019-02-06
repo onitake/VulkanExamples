@@ -203,6 +203,7 @@ public:
 
 		loadHairData();
 		allocateResources();
+		createSimulation();
 
 		prepared = true;
 	}
