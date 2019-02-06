@@ -29,7 +29,7 @@ std::vector<float> BoneMapping::getBoneMatrices() const {
 	for (auto it = bonemtx.begin(); it != bonemtx.end(); it++) {
 		glm::mat4 m = *it;
 		for (size_t i = 0; i < 4; i++) {
-			std::copy(&m[i][0], &m[i][3], conv.end());
+			conv.insert(conv.end(), &m[i][0], &m[i][3]);
 		}
 	}
 	return conv;
